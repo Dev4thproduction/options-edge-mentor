@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				fintech: {
+					purple: '#8B5CF6',
+					'purple-light': '#A78BFA',
+					orange: '#FEC6A1', 
+					'orange-light': '#FDE1D3',
+					green: '#10B981',
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,19 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-text': 'linear-gradient(135deg, #8B5CF6 0%, #FEC6A1 100%)',
 			}
 		}
 	},
